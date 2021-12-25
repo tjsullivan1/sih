@@ -1,0 +1,66 @@
+{% extends "shared/layout.html" %}
+
+{% block content %}
+
+    <img src="/static/img/sih.png" style="float: left; max-width: 48px; margin-right: 20px;" alt="">
+
+    <h1><span class="font-semi-bold">Rental Service</span> <span class="smaller">A RESTful Rental service</span>
+    </h1>
+
+    <div style="clear:both;"></div>
+    <br>
+    <br>
+    <p class="lead">
+        The <a href="https://sullivantim.com/">Sullivan Investment Holdings</a> Rental service.<br>
+        <br>
+        <strong>Endpoints</strong>
+    <ul>
+        <li>
+            <strong>Get Tenants</strong><br>
+            <a href="/api/tenant/"
+               target="_blank">
+            <strong>GET /api/tenants/{id}</strong></a><br>
+            <br>
+            <div style="font-size: 12px;">
+                <strong>Parameters</strong>
+                <ul>
+                    <li>Optional: <code>{id}</code> - the invoice id in the database
+                    </li> 
+                </ul>
+
+                <strong>Response JSON</strong>
+                <ul>
+                    <li>Click <a href="/api/invoices"
+                                 target="_blank"
+                    >the link above</a> to see example output.
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <strong>Get Invoice</strong><br>
+            <a href="/api/invoice/"
+               target="_blank"
+            ><strong>GET /api/invoices/{id}</strong></a><br>
+            <br>
+            <div style="font-size: 12px;">
+                <strong>Parameters</strong>
+                <ul>
+                    <li>Optional: <code>{id}</code> - the invoice id in the database
+                    </li> 
+                </ul>
+
+                <strong>Response JSON</strong>
+                <ul>
+                    <li>Click <a href="/api/invoices"
+                                 target="_blank"
+                    >the link above</a> to see example output.
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    </p>
+    </div>
+
+{% endblock %}
