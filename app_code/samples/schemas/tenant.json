@@ -1,0 +1,14 @@
+{
+    "first_name": "tenant first name (if business, name of accounts payable clerk)",
+    "last_name": "tenant last name (if business, name of accounts payable clerk)",
+    "email_address": "tenant mailing address (if business, email of accounts payable clerk)",
+    "phone_number": "ten digit number for phone calling. Make this just digits, and add formatting capabilities.",
+    "business_name": "[Optional] the name of the business operating as a tenant",
+    "billing_address": {
+        "street_address1": "first line of the street address",
+        "street_address2": "[Optional] second line of the street address",
+        "city": "city",
+        "state": "state",
+        "zip_code": "zip code for the mailing address"
+    }
+}
